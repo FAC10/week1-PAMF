@@ -10,14 +10,95 @@ h1, h2 {
 }
 
 h2 {
-  font-size: 2.5rem; 
+  font-size: 2.2rem;
 }
-
 
 .team {
-
+  width:100%;
+  background-color: #3b3b3b;
+  position: relative;
+  overflow: auto;
 }
 
-.team__person {
+.person {
+  width: 50%;
+  float: left;
+  font-size: 0px;
+  height: 50vh;
+  position: relative;
+  min-height: 280px;
+}
 
+.person__slidefront {
+  position: absolute;
+  width:92%;
+  font-size: 0px;
+  padding: 4%;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  height: 42vh;
+  min-height: 280px;
+}
+
+.person__portrait {
+  background-color: #292929;
+  border-radius: 50%;
+  border: 8px solid #07689f;
+  height: 27.5vw;
+  width: 27.5vw;
+  max-width: 260px;
+  max-height: 260px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.person__portrait--philippa { background-image: url("../images/philippa.jpeg"); }
+.person__portrait--antonio { background-image: url("../images/antonio.jpeg"); }
+.person__portrait--finn { background-image: url("../images/finn.jpeg"); }
+.person__portrait--maja { background-image: url("../images/maja.jpeg"); }
+
+.person__title {
+  text-align: center;
+  margin: 0.5rem 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #252525;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.person__bio {
+  font-size: 1.2rem;
+}
+
+.person__projects {
+  width: 49%;
+  height: 50px;
+  background-color: black;
+  display: inline-block;
+}
+
+.person--philippa {
+  background-color: #fccb2a;
+}
+
+.person--antonio {
+  background-color: #fafafa;
+}
+.person--finn {
+  background-color: #a2d5f2;
+}
+.person--maja {
+  background-color: #ff6f56;
+}
+
+.person__slideback {
+  background-color: black;
 }
