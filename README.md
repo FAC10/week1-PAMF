@@ -7,7 +7,9 @@ We are building this site to showcase our skills and attract clients. We want to
 ## What?
 
 ### Layout
-
+- Nav that appears on scroll
+- Full width sections in vibrant/primary colours (high contrast)
+- 
 
 ### Nav
 Anchor to sections:
