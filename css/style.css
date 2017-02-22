@@ -10,9 +10,21 @@ h1, h2 {
 }
 
 h2 {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
 }
 
+.header-img {
+  width: 100%;
+  position: relative;
+}
+
+.header-txt {
+  position: absolute;
+  z-index: 1;
+  margin: 25% 38%;
+  font-size: 6rem;
+  letter-spacing: 1.5rem;
+}
 
 .team {
 
