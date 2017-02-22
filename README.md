@@ -9,7 +9,7 @@ We are building this site to showcase our skills and attract clients. We want to
 ### Layout
 - Nav that appears on scroll
 - Full width sections in vibrant/primary colours (high contrast)
-- 
+-
 
 ### Nav
 Anchor to sections:
@@ -39,4 +39,7 @@ Who we are as a team and about this project
 ## How?
 
 1. Research the task
-1. Create issues
+1. Work together to define basic layout, font and colours
+1. Create issues for all foreseeable goals
+1. Logically assign pairs to issues
+1. Use pair programming to work on issues
