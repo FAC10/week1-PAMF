@@ -16,7 +16,7 @@ h2 {
 #navigation {
     margin-left: 76%;
     font-size: 1.5rem;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     margin-top: 1%;
     width: 100%;
@@ -34,20 +34,36 @@ h2 {
 
 header {
   position: absolute;
-  background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.6) 50%), url(../assets/header4.png);
+  background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.4) 50%), url(../assets/header4.png);
   width: 100%;
   height: 100%;
   background-size: 100%;
 }
 
+#wrapper {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
 .header-txt {
-  position: absolute;
-  z-index: 1;
-  margin: 40% 36%;
-  font-size: 6.5rem;
-  letter-spacing: 1.8rem;
-  color: #fafafa;
-  font-family: 'raleway';
+    position: relative;
+    z-index: 1;
+    font-size: 6.5rem;
+    letter-spacing: 1.8rem;
+    color: #fafafa;
+    font-family: 'raleway';
+    top: 75%;
+    padding-left: 2%;
+}
+
+.header-tag {
+    position: relative;
+    z-index: 1;
+    color: #fafafa;
+    font-family: 'raleway';
+    top: 72%;
+    font-size: 1.5rem;
 }
 
 .team {
