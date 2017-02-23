@@ -237,6 +237,10 @@ background-image: url(../assets/down-chevron-hover.png);
   font-size: 1.5rem;
 }
 
+.person--center {
+  text-align: center;
+}
+
 .person__link {
   color: black;
   font-size: 1.5rem;
