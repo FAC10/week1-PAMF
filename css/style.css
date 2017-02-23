@@ -13,7 +13,7 @@ h2 {
   font-size: 2.2rem;
 }
 
-#navigation {
+#Navigation {
     font-size: 1.5rem;
     position: fixed;
     z-index: 1;
@@ -23,15 +23,25 @@ h2 {
 
 }
 
-#navigation a {
+.navigation__link {
   text-decoration: none;
   color: #fafafa;
   padding: 2%;
 }
 
-#navigation a:hover, #navigation a:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: #ff6f56;
   border-bottom: 2px solid #fafafa;
+}
+
+.navigation__box {
+    width: 100%;
+    background-color: black;
+    height: 5rem;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    padding-bottom: 1%;
 }
 
 header {
@@ -42,32 +52,61 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center center;
+  z-index: 4;
 }
 
-#wrapper {
-  height: 100%;
+.title {
+  position: absolute;
   width: 100%;
   text-align: center;
+  bottom: 0%;
 }
 
-.header-txt {
+.title__main {
     position: relative;
     z-index: 1;
     font-size: 6.5rem;
     letter-spacing: 1.8rem;
     color: #fafafa;
     font-family: 'raleway';
-    top: 75%;
     padding-left: 2%;
 }
 
-.header-tag {
+.title__sub {
     position: relative;
     z-index: 1;
     color: #fafafa;
     font-family: 'raleway';
-    top: 72%;
     font-size: 1.5rem;
+}
+
+.title__chevron {
+    background-image: url(../assets/downChevron.png);
+    background-size: 2.5rem;
+    padding: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title__chevron:hover {
+background-image: url(../assets/down-chevron-hover.png);
+}
+
+#About {
+    width: 65%;
+    margin: 0 auto;
+    padding: 15%;
+}
+
+#About p {
+    font-size: 1.5rem;
+    color: black;
+    border-bottom: 2px solid #ff6f56;
+    padding-bottom: 3%;
+}
+
+#About h2 {
+  font-family: 'raleway';
 }
 
 .team {
@@ -235,4 +274,27 @@ header {
 .person:hover .person__topright {
   top: 100%;
   left: -100%;
+}
+
+#Footer {
+background-color: #07689f;
+padding-top: 10%;
+}
+
+.footer__text {
+  color: white;
+  text-align: center;
+}
+
+.footer__chevron {
+    background-image: url(../assets/up-chevron.png);
+    background-size: 2.5rem;
+    padding: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.footer__chevron:hover {
+  background-image: url(../assets/up-chevron-yellow.png);
 }

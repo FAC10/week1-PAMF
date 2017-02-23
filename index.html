@@ -18,27 +18,35 @@
 
 </head>
 <body>
-  <header>
-    <nav id="navigation">
-      <a href="#about">About</a>
-      <a href="#team">Team</a>
-      <a href="#contact">Contact</a>
+
+  <header id="Header">
+
+    <nav id="Navigation">
+      <a class = "navigation__link" href="#About">About</a>
+      <a class = "navigation__link" href="#Team">Team</a>
+      <a class = "navigation__link" href="#Contact">Contact</a>
     </nav>
-    <section id = 'wrapper'>
-      <h1 class='header-txt'> PAMF </h1>
-      <h2 class="header-tag"> Designing Coding Building </h2>
+
+    <section class = 'title'>
+      <h1 class="title__main"> PAMF </h1>
+      <h2 class="title__sub"> Designing Coding Building </h2>
+      <a class="title__chevron" href="#About">
+      </a>
     </section>
   </header>
 
-<section id="about" >
+  <section class = 'navigation__box'>
+  </section>
 
+<section id="About" >
+<h2> About </h2>
   <p>
-    Lorem ipsum dolor sit amet, duo wisi equidem lucilius at, vix denique petentium ex, dicta ludus torquatos at pri. In ferri falli nec. Ea ius modo mundi, impetus insolens postulant has ea. Ei veri adipisci adversarium vix, perpetua reformidans ei duo. Ius te stet civibus, fugit rationibus at nam.
+    We're a group of creative full-stack web developers who like to build fun and accessible products.
   </p>
 
 </section>
 
-  <section id="team" class="team">
+  <section id="Team" class="team">
 
     <section class="person person--yellow" tabindex="0">
       <section class="person__slidefront person__topleft">
@@ -117,6 +125,31 @@
     </section>
 
   </section>
+
+  <section id="Contact">
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    	<div class="row">
+    		<label for="name">Name:</label><br />
+    		<input id="name" class="input" name="name" type="text" value="" placeholder="your name here" size="30" /><br />
+    	</div>
+    	<div class="row">
+    		<label for="email">email:</label><br />
+    		<input id="email" class="input" name="email" type="text" value="" placeholder="your email here" size="30" /><br />
+    	</div>
+    	<div class="row">
+    		<label for="message">Message:</label><br />
+    		<textarea id="message" class="input" name="message" placeholder="your message here" rows="7" cols="30"></textarea><br />
+    	</div>
+    	<input id="submit_button" type="submit" value="Send email" />
+    </form>
+
+  </section>
+
+  <footer id="Footer">
+<p class="footer__text"> © 2017 PAMP • F&C, London </p>
+<a class="footer__chevron" href="#Header">
+</a>
+  </footer>
 
 </body>
 </html>
