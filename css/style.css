@@ -34,6 +34,16 @@ h2 {
   border-bottom: 2px solid #fafafa;
 }
 
+#nav-box {
+    width: 100%;
+    background-color: black;
+    height: 5rem;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    padding-bottom: 1%;
+}
+
 header {
   position: relative;
   background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.4) 50%), url(../assets/header4.png);
@@ -42,6 +52,7 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center center;
+  z-index: 4;
 }
 
 #wrapper {
