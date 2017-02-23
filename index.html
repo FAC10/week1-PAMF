@@ -20,11 +20,9 @@
   <header>
 
     <nav id="navigation">
-
-      <a href="#">About</a>
-      <a href="#">Team</a>
-      <a href="#">Contact</a>
-
+      <a href="#About">About</a>
+      <a href="#Team">Team</a>
+      <a href="#Contact">Contact</a>
     </nav>
 
     <section id = 'wrapper'>
@@ -36,7 +34,7 @@
   <section id = 'nav-box'>
   </section>
 
-<section id="about" >
+<section id="About" >
 <h2> About </h2>
   <p>
     We're a group of creative full-stack web developers who like to build fun and accessible products.
@@ -44,7 +42,7 @@
 
 </section>
 
-  <section class="team">
+  <section id="Team" class="team">
 
     <section class="person person--yellow" tabindex="0">
       <section class="person__slidefront">
@@ -96,60 +94,24 @@
 
   </section>
 
-  <!-- <section class="team">
-    <section class="person">
-      <section class="person__portrait"></section>
-      <h2 class="person__title">Philippa</h2>
-      <p class="person__bio">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  <section id="Contact">
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    	<div class="row">
+    		<label for="name">Name:</label><br />
+    		<input id="name" class="input" name="name" type="text" value="" placeholder="your name here" size="30" /><br />
+    	</div>
+    	<div class="row">
+    		<label for="email">email:</label><br />
+    		<input id="email" class="input" name="email" type="text" value="" placeholder="your email here" size="30" /><br />
+    	</div>
+    	<div class="row">
+    		<label for="message">Message:</label><br />
+    		<textarea id="message" class="input" name="message" placeholder="your message here" rows="7" cols="30"></textarea><br />
+    	</div>
+    	<input id="submit_button" type="submit" value="Send email" />
+    </form>
 
-      </p>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-    </section>
-
-    <section class="person">
-      <section class="person__portrait"></section>
-      <h2 class="person__title">Antonio</h2>
-      <p class="person__bio">
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
-    </p>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-    </section>
-
-<div class="clear"></div>
-
-    <section class="person">
-      <section class="person__portrait"></section>
-      <h2 class="person__title">Finn</h2>
-      <p class="person__bio">
-
-      </p>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-    </section>
-
-
-    <section class="person">
-      <section class="person__portrait person--maja"></section>
-      <h2 class="person__title">Maja</h2>
-      <p class="person__bio">
-
-      </p>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-      <section class="person__projects"></section>
-    </section>
-
-  </section> -->
+  </section>
 
 </body>
 </html>
