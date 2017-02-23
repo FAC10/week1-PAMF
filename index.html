@@ -126,6 +126,8 @@
   </section>
 
   <section id="Contact">
+    <h1 id="contact_form_header">Contact</h1>
+
     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
     	<div class="row">
     		<label for="name">Name:</label><br />
@@ -136,10 +138,12 @@
     		<input id="email" class="input" name="email" type="text" value="" placeholder="your email here" size="30" /><br />
     	</div>
     	<div class="row">
-    		<label for="message">Message:</label><br />
-    		<textarea id="message" class="input" name="message" placeholder="your message here" rows="7" cols="30"></textarea><br />
-    	</div>
-    	<input id="submit_button" type="submit" value="Send email" />
+
+    		<label for="message"></label>
+        <!-- <input id="message" class="input" name="message" type="text" value="" placeholder="Your name here" rows="7" cols="32" /><br /> -->
+    	  <textarea id="message" class="input" name="message" placeholder="Your message here" rows="7" cols="30"></textarea><br />
+      </div>
+      <input id="submit_button" type="submit" value="Send email" />
     </form>
 
   </section>
