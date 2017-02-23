@@ -59,7 +59,7 @@ header {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 2%;
+  bottom: 0%;
 }
 
 .title__main {
@@ -78,6 +78,18 @@ header {
     color: #fafafa;
     font-family: 'raleway';
     font-size: 1.5rem;
+}
+
+.title__chevron {
+    background-image: url(../assets/downChevron.png);
+    background-size: 2.5rem;
+    padding: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title__chevron:hover {
+background-image: url(../assets/down-chevron-hover.png);
 }
 
 #About {
@@ -194,4 +206,27 @@ header {
 
 .person:hover .person__slideback, .person:focus .person__slideback {
   left: 0;
+}
+
+#Footer {
+background-color: #07689f;
+padding-top: 10%;
+}
+
+.footer__text {
+  color: white;
+  text-align: center;
+}
+
+.footer__chevron {
+    background-image: url(../assets/up-chevron.png);
+    background-size: 2.5rem;
+    padding: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.footer__chevron:hover {
+  background-image: url(../assets/up-chevron-yellow.png);
 }
