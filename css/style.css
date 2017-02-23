@@ -17,9 +17,18 @@ h2 {
     font-size: 1.5rem;
     position: fixed;
     z-index: 1;
-    margin-top: 1.6rem;
-    width: 97%;
     text-align: right;
+    height: 4.4rem;
+    padding-top: 1.6rem;
+    margin: 0;
+    width: 97%;
+    padding-right: 3%;
+    transition: 0.5s background-color ease;
+}
+
+#Navigation.navigation--onscroll {
+  background-color: #fafafa;
+  z-index: 5;
 
 }
 
@@ -29,9 +38,17 @@ h2 {
   padding: 2%;
 }
 
+.navigation__link--white {
+  color: black;
+  margin-top: 1.6rem;
+}
 .navigation__link:hover, .navigation__link:focus {
-  color: #ff6f56;
+  color: #07689f;
   border-bottom: 2px solid #fafafa;
+}
+
+.navigation__link--white:hover, .navigation__link--white:focus {
+  border-bottom: 2px solid #ff6f56;
 }
 
 .navigation__box {

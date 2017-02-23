@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -35,13 +34,13 @@
     </section>
   </header>
 
-  <section class = 'navigation__box'>
+  <section id="navbox" class='navigation__box'>
   </section>
 
 <section id="About" >
 <h2> About </h2>
   <p>
-    We're a group of creative <strike>full-stack</strike> web developers who like to build fun and accessible products.
+    We're a group of creative full-stack web developers who like to build fun and accessible products.
   </p>
 
 </section>
@@ -127,32 +126,29 @@
   </section>
 
   <section id="Contact">
-    <h1>Contact</h1>
     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
     	<div class="row">
-    		<label for="name"></label>
-    		<!-- <input id="name" class="input" name="name" type="text" value="" placeholder="Your name here" size="32" /><br /> -->
-        <textarea id="name" class="input" name="name" placeholder="Your name here" rows="1" cols="30"></textarea><br />
-      </div>
+    		<label for="name">Name:</label><br />
+    		<input id="name" class="input" name="name" type="text" value="" placeholder="your name here" size="30" /><br />
+    	</div>
     	<div class="row">
-    		<label for="email"></label>
-    		<!-- <input id="email" class="input" name="email" type="text" value="" placeholder="Your email here" size="32" /><br /> -->
-        <textarea id="email" class="input" name="email" placeholder="Your email here" rows="1" cols="30"></textarea><br />
-      </div>
+    		<label for="email">email:</label><br />
+    		<input id="email" class="input" name="email" type="text" value="" placeholder="your email here" size="30" /><br />
+    	</div>
     	<div class="row">
-    		<label for="message"></label>
-    	  <textarea id="message" class="input" name="message" placeholder="Your message here" rows="7" cols="30"></textarea><br />
-      </div>
-      <input id="submit_button" type="submit" value="Send email" />
+    		<label for="message">Message:</label><br />
+    		<textarea id="message" class="input" name="message" placeholder="your message here" rows="7" cols="30"></textarea><br />
+    	</div>
+    	<input id="submit_button" type="submit" value="Send email" />
     </form>
 
   </section>
 
   <footer id="Footer">
-<p class="footer__text"> © 2017 PAMP • F&C, London </p>
-<a class="footer__chevron" href="#Header">
-</a>
+    <p class="footer__text"> © 2017 PAMP • F&C, London </p>
+    <a class="footer__chevron" href="#Header"></a>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
