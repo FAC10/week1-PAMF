@@ -167,3 +167,46 @@ header {
 .person:hover .person__slideback, .person:focus .person__slideback {
   left: 0;
 }
+#Contact {
+  background-color: #fafafa;
+}
+
+#contact_form {
+  position: relative;
+  width: 50%;
+  margin: 100px auto;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+}
+
+.row {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  text-indent: 10px;
+}
+
+#name, #email, #message, #submit_button {
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+input {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}

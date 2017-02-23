@@ -89,20 +89,23 @@
   </section>
 
   <section id="Contact">
+    <h1>Contact</h1>
     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
     	<div class="row">
-    		<label for="name">Name:</label><br />
-    		<input id="name" class="input" name="name" type="text" value="" placeholder="your name here" size="30" /><br />
-    	</div>
+    		<label for="name"></label>
+    		<!-- <input id="name" class="input" name="name" type="text" value="" placeholder="Your name here" size="32" /><br /> -->
+        <textarea id="name" class="input" name="name" placeholder="Your name here" rows="1" cols="30"></textarea><br />
+      </div>
     	<div class="row">
-    		<label for="email">email:</label><br />
-    		<input id="email" class="input" name="email" type="text" value="" placeholder="your email here" size="30" /><br />
-    	</div>
+    		<label for="email"></label>
+    		<!-- <input id="email" class="input" name="email" type="text" value="" placeholder="Your email here" size="32" /><br /> -->
+        <textarea id="email" class="input" name="email" placeholder="Your email here" rows="1" cols="30"></textarea><br />
+      </div>
     	<div class="row">
-    		<label for="message">Message:</label><br />
-    		<textarea id="message" class="input" name="message" placeholder="your message here" rows="7" cols="30"></textarea><br />
-    	</div>
-    	<input id="submit_button" type="submit" value="Send email" />
+    		<label for="message"></label>
+    	  <textarea id="message" class="input" name="message" placeholder="Your message here" rows="7" cols="30"></textarea><br />
+      </div>
+      <input id="submit_button" type="submit" value="Send email" />
     </form>
 
   </section>
