@@ -43,11 +43,12 @@ h2 {
   margin-top: 1.6rem;
 }
 .navigation__link:hover, .navigation__link:focus {
-  color: #07689f;
+  color: #ff6f56;
   border-bottom: 2px solid #fafafa;
 }
 
 .navigation__link--white:hover, .navigation__link--white:focus {
+  color: #07689f;
   border-bottom: 2px solid #ff6f56;
 }
 
@@ -273,25 +274,26 @@ background-image: url(../assets/down-chevron-hover.png);
   top: 0;
 }
 
-.person__link:focus .person__slideback {
-  left: 0;
+.person:hover .person__bottomleft, .person:focus .person__bottomleft, .remove-bl  {
+  left: 100%;
+  top: -100%;
+}
+.person:hover .person__bottomright, .person:focus .person__bottomright, .remove-br  {
+  left: -100%;
+  top: -100%;
+}
+.person:hover .person__topleft, .person:focus .person__topleft, .remove-tl  {
+  top: 100%;
+  left: 100%;
+}
+.person:hover .person__topright, .person:focus .person__topright, .remove-tr {
+  top: 100%;
+  left: -100%;
+}
+
+.stay {
   top: 0;
-}
-.person:hover .person__bottomleft  {
-  left: 100%;
-  top: -100%;
-}
-.person:hover .person__bottomright {
-  left: -100%;
-  top: -100%;
-}
-.person:hover .person__topleft {
-  top: 100%;
-  left: 100%;
-}
-.person:hover .person__topright {
-  top: 100%;
-  left: -100%;
+  left: 0;
 }
 
 #Footer {
