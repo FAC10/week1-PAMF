@@ -120,6 +120,7 @@ background-image: url(../assets/down-chevron-hover.png);
     color: black;
     border-bottom: 2px solid #ff6f56;
     padding-bottom: 3%;
+    max-width: 900px;
 }
 
 #About h2 {
