@@ -94,6 +94,9 @@ header {
   font-size: 0px;
   height: 50vh;
   min-height: 340px;
+  transition: 0.5s all cubic-bezier(0.57, -0.21, 0.58, 1);
+  left: 0;
+  top: 0;
 }
 
 .person__content {
@@ -141,30 +144,95 @@ header {
   display: inline-block;
 }
 
-.person--yellow {
-  background-color: #fccb2a;
-}
-
-.person--offwhite {
-  background-color: #fafafa;
-}
-.person--lightblue {
-  background-color: #a2d5f2;
-}
-.person--orange {
-  background-color: #ff6f56;
-}
+.person--yellow { background-color: #fccb2a; }
+.person--offwhite { background-color: #fafafa; }
+.person--lightblue { background-color: #a2d5f2; }
+.person--orange { background-color: #ff6f56; }
 
 .person__slideback {
-  background-color: black;
   position: absolute;
   width: 100%;
   top: 0;
   left: 100%;
   height: 50vh;
   min-height: 280px;
+  transition: 0.5s all cubic-bezier(0.57, -0.21, 0.58, 1);
 }
 
-.person:hover .person__slideback, .person:focus .person__slideback {
+.person__info {
+  background-color: white;
+  width: 70%;
+  max-width: 450px;
+  padding: 5%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+  border-radius: 1rem;
+  border: 8px solid #07689f;
+  font-size: 1.5rem;
+}
+
+.person__text {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.person__link {
+  color: black;
+  font-size: 1.5rem;
+}
+.person__link:hover {
+  color: #07689f;
+}
+
+.person--centertext {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.person__slideback--tl, .person__slideback--bl {
+  left: -100%;
+}
+.person__slideback--tr, .person__slideback--br {
+  left: 100%;
+}
+.person__slideback--tl, .person__slideback--tr {
+  top: -100%
+}
+.person__slideback--bl, .person__slideback--br {
+  top: 100%;
+}
+.person:hover .person__slideback--tl, .person:hover .person__slideback--tr,
+.person:focus .person__slideback--tl, .person:focus .person__slideback--tr {
   left: 0;
+  top: 0;
+}
+.person:hover .person__slideback--bl, .person:hover .person__slideback--br,
+.person:focus .person__slideback--bl, .person:focus .person__slideback--br {
+  left: 0;
+  top: 0;
+}
+
+.person__link:focus .person__slideback {
+  left: 0;
+  top: 0;
+}
+.person:hover .person__bottomleft  {
+  left: 100%;
+  top: -100%;
+}
+.person:hover .person__bottomright {
+  left: -100%;
+  top: -100%;
+}
+.person:hover .person__topleft {
+  top: 100%;
+  left: 100%;
+}
+.person:hover .person__topright {
+  top: 100%;
+  left: -100%;
 }
