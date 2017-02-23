@@ -105,7 +105,7 @@ header {
     background-position: center;
 }
 
-.title__chevron:hover {
+.title__chevron:hover, .title__chevron:focus {
 background-image: url(../assets/down-chevron-hover.png);
 }
 
@@ -241,7 +241,7 @@ background-image: url(../assets/down-chevron-hover.png);
   color: black;
   font-size: 1.5rem;
 }
-.person__link:hover {
+.person__link:hover, .person__link:focus {
   color: #07689f;
 }
 
@@ -315,7 +315,7 @@ padding-top: 10%;
     display: block;
 }
 
-.footer__chevron:hover {
+.footer__chevron:hover, .footer__chevron:focus {
   background-image: url(../assets/up-chevron-yellow.png);
 }
 #Contact {
