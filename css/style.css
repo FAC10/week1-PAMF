@@ -13,7 +13,7 @@ h2 {
   font-size: 2.2rem;
 }
 
-#navigation {
+#Navigation {
     font-size: 1.5rem;
     position: fixed;
     z-index: 1;
@@ -23,18 +23,18 @@ h2 {
 
 }
 
-#navigation a {
+.navigation__link {
   text-decoration: none;
   color: #fafafa;
   padding: 2%;
 }
 
-#navigation a:hover, #navigation a:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: #ff6f56;
   border-bottom: 2px solid #fafafa;
 }
 
-#nav-box {
+.navigation__box {
     width: 100%;
     background-color: black;
     height: 5rem;
@@ -55,14 +55,14 @@ header {
   z-index: 4;
 }
 
-#wrapper {
+.title {
   position: absolute;
   width: 100%;
   text-align: center;
   bottom: 2%;
 }
 
-.header-txt {
+.title__main {
     position: relative;
     z-index: 1;
     font-size: 6.5rem;
@@ -72,7 +72,7 @@ header {
     padding-left: 2%;
 }
 
-.header-tag {
+.title__sub {
     position: relative;
     z-index: 1;
     color: #fafafa;
@@ -80,20 +80,20 @@ header {
     font-size: 1.5rem;
 }
 
-#about {
+#About {
     width: 65%;
     margin: 0 auto;
     padding: 15%;
 }
 
-#about p {
+#About p {
     font-size: 1.5rem;
     color: black;
     border-bottom: 2px solid #ff6f56;
     padding-bottom: 3%;
 }
 
-#about h2 {
+#About h2 {
   font-family: 'raleway';
 }
 
