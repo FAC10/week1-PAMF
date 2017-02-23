@@ -17,7 +17,7 @@ h2 {
     font-size: 1.5rem;
     position: fixed;
     z-index: 1;
-    margin-top: 2%;
+    margin-top: 1.6rem;
     width: 97%;
     text-align: right;
 
@@ -37,11 +37,10 @@ h2 {
 .navigation__box {
     width: 100%;
     background-color: black;
-    height: 5rem;
+    height: 6rem;
     z-index: 3;
     position: fixed;
     top: 0;
-    padding-bottom: 1%;
 }
 
 header {
@@ -153,6 +152,8 @@ background-image: url(../assets/down-chevron-hover.png);
   width: 27.5vw;
   max-width: 260px;
   max-height: 260px;
+  min-width: 200px;
+  min-height: 200px;
   margin: 0 auto;
   background-size: cover;
   background-position: center center;
@@ -342,9 +343,20 @@ input {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 420px) {
     .title__main {
         font-size: 4.5rem;
         padding-left: 7%;
     }
+
+    .person {
+      width: 100%;
+    }
+
+    #Navigation {
+      width: 100%;
+      text-align: center;
+    }
+
 }
