@@ -296,7 +296,7 @@ background-image: url(../assets/down-chevron-hover.png);
 
 #Footer {
 background-color: #07689f;
-padding-top: 10%;
+padding-top: 5%;
 }
 
 .footer__text {
@@ -306,7 +306,7 @@ padding-top: 10%;
 
 .footer__chevron {
     background-image: url(../assets/up-chevron.png);
-    background-size: 2.5rem;
+    background-size: 2rem;
     padding: 5%;
     background-repeat: no-repeat;
     background-position: center;
