@@ -324,7 +324,7 @@ padding-top: 10%;
 
 #contact_form {
 position: relative;
-
+padding-bottom: 4%;
 }
 
 ::-webkit-input-placeholder {
@@ -350,19 +350,19 @@ position: relative;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 #submit_button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-   top: 150%;
+  top: 130%;
 }
 
 #contact_form_header {
+  font-family: 'Raleway';
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 
