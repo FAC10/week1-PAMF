@@ -70,6 +70,23 @@ header {
     font-size: 1.5rem;
 }
 
+#about {
+    width: 65%;
+    margin: 0 auto;
+    padding: 15%;
+}
+
+#about p {
+    font-size: 1.5rem;
+    color: black;
+    border-bottom: 2px solid #ff6f56;
+    padding-bottom: 3%;
+}
+
+#about h2 {
+  font-family: 'raleway';
+}
+
 .team {
   width:100%;
   background-color: #3b3b3b;
