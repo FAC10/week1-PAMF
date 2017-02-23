@@ -32,8 +32,7 @@
 
   personLinks.forEach(function (e) {
     e.addEventListener('focus', function () {
-      var frontSlide = e.parentNode.parentNode.parentNode.firstChild.nextSibling;
-
+      var frontSlide = e.parentNode.parentNode.parentNode.parentNode.firstChild.nextSibling;
       if (frontSlide.className.includes('topleft')) {
         frontSlide.className += ' remove-tl';
       } else if (frontSlide.className.includes('topright')) {
@@ -43,7 +42,7 @@
       } else if (frontSlide.className.includes('bottomleft')) {
         frontSlide.className += ' remove-bl';
       }
-      e.parentNode.parentNode.className += ' stay';
+      e.parentNode.parentNode.parentNode.className += ' stay';
     });
   });
 })();
