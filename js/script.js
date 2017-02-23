@@ -5,6 +5,7 @@
   navLinks = Array.from(navLinks);
   document.getElementById('navbox').style.display = 'none';
   var windowSize = window.innerHeight - nav.clientHeight;
+
   window.addEventListener("scroll", function (e) {
     var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if (scroll > windowSize) {
