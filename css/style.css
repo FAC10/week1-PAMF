@@ -13,25 +13,51 @@ h2 {
   font-size: 2.2rem;
 }
 
-#navigation {
+#Navigation {
     font-size: 1.5rem;
     position: fixed;
     z-index: 1;
-    margin-top: 2%;
-    width: 97%;
     text-align: right;
+    height: 4.4rem;
+    padding-top: 1.6rem;
+    margin: 0;
+    width: 97%;
+    padding-right: 3%;
+    transition: 0.5s background-color ease;
+}
+
+#Navigation.navigation--onscroll {
+  background-color: #fafafa;
+  z-index: 5;
 
 }
 
-#navigation a {
+.navigation__link {
   text-decoration: none;
   color: #fafafa;
   padding: 2%;
 }
 
-#navigation a:hover, #navigation a:focus {
-  color: #ff6f56;
+.navigation__link--white {
+  color: black;
+  margin-top: 1.6rem;
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: #07689f;
   border-bottom: 2px solid #fafafa;
+}
+
+.navigation__link--white:hover, .navigation__link--white:focus {
+  border-bottom: 2px solid #ff6f56;
+}
+
+.navigation__box {
+    width: 100%;
+    background-color: black;
+    height: 6rem;
+    z-index: 3;
+    position: fixed;
+    top: 0;
 }
 
 header {
@@ -42,16 +68,17 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center center;
+  z-index: 4;
 }
 
-#wrapper {
+.title {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 2%;
+  bottom: 0%;
 }
 
-.header-txt {
+.title__main {
     position: relative;
     z-index: 1;
     font-size: 6.5rem;
@@ -61,7 +88,7 @@ header {
     padding-left: 2%;
 }
 
-.header-tag {
+.title__sub {
     position: relative;
     z-index: 1;
     color: #fafafa;
@@ -69,20 +96,32 @@ header {
     font-size: 1.5rem;
 }
 
-#about {
+.title__chevron {
+    background-image: url(../assets/downChevron.png);
+    background-size: 2.5rem;
+    padding: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title__chevron:hover {
+background-image: url(../assets/down-chevron-hover.png);
+}
+
+#About {
     width: 65%;
     margin: 0 auto;
     padding: 15%;
 }
 
-#about p {
+#About p {
     font-size: 1.5rem;
     color: black;
     border-bottom: 2px solid #ff6f56;
     padding-bottom: 3%;
 }
 
-#about h2 {
+#About h2 {
   font-family: 'raleway';
 }
 
@@ -110,6 +149,9 @@ header {
   font-size: 0px;
   height: 50vh;
   min-height: 340px;
+  transition: 0.5s all cubic-bezier(0.57, -0.21, 0.58, 1);
+  left: 0;
+  top: 0;
 }
 
 .person__content {
@@ -127,6 +169,8 @@ header {
   width: 27.5vw;
   max-width: 260px;
   max-height: 260px;
+  min-width: 200px;
+  min-height: 200px;
   margin: 0 auto;
   background-size: cover;
   background-position: center center;
@@ -157,32 +201,120 @@ header {
   display: inline-block;
 }
 
-.person--yellow {
-  background-color: #fccb2a;
-}
-
-.person--offwhite {
-  background-color: #fafafa;
-}
-.person--lightblue {
-  background-color: #a2d5f2;
-}
-.person--orange {
-  background-color: #ff6f56;
-}
+.person--yellow { background-color: #fccb2a; }
+.person--offwhite { background-color: #fafafa; }
+.person--lightblue { background-color: #a2d5f2; }
+.person--orange { background-color: #ff6f56; }
 
 .person__slideback {
-  background-color: black;
   position: absolute;
   width: 100%;
   top: 0;
   left: 100%;
   height: 50vh;
   min-height: 280px;
+  transition: 0.5s all cubic-bezier(0.57, -0.21, 0.58, 1);
 }
 
-.person:hover .person__slideback, .person:focus .person__slideback {
+.person__info {
+  background-color: white;
+  width: 70%;
+  max-width: 450px;
+  padding: 5%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+  border-radius: 1rem;
+  border: 8px solid #07689f;
+  font-size: 1.5rem;
+}
+
+.person__text {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.person__link {
+  color: black;
+  font-size: 1.5rem;
+}
+.person__link:hover {
+  color: #07689f;
+}
+
+.person--centertext {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.person__slideback--tl, .person__slideback--bl {
+  left: -100%;
+}
+.person__slideback--tr, .person__slideback--br {
+  left: 100%;
+}
+.person__slideback--tl, .person__slideback--tr {
+  top: -100%
+}
+.person__slideback--bl, .person__slideback--br {
+  top: 100%;
+}
+.person:hover .person__slideback--tl, .person:hover .person__slideback--tr,
+.person:focus .person__slideback--tl, .person:focus .person__slideback--tr {
   left: 0;
+  top: 0;
+}
+.person:hover .person__slideback--bl, .person:hover .person__slideback--br,
+.person:focus .person__slideback--bl, .person:focus .person__slideback--br {
+  left: 0;
+  top: 0;
+}
+
+.person__link:focus .person__slideback {
+  left: 0;
+  top: 0;
+}
+.person:hover .person__bottomleft  {
+  left: 100%;
+  top: -100%;
+}
+.person:hover .person__bottomright {
+  left: -100%;
+  top: -100%;
+}
+.person:hover .person__topleft {
+  top: 100%;
+  left: 100%;
+}
+.person:hover .person__topright {
+  top: 100%;
+  left: -100%;
+}
+
+#Footer {
+background-color: #07689f;
+padding-top: 10%;
+}
+
+.footer__text {
+  color: white;
+  text-align: center;
+}
+
+.footer__chevron {
+    background-image: url(../assets/up-chevron.png);
+    background-size: 2.5rem;
+    padding: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.footer__chevron:hover {
+  background-image: url(../assets/up-chevron-yellow.png);
 }
 #Contact {
   background-color: #fafafa;
@@ -231,4 +363,22 @@ position: relative;
 #contact_form_header {
   text-align: center;
   padding-bottom: 5%;
+}
+
+
+@media screen and (max-width: 420px) {
+    .title__main {
+        font-size: 4.5rem;
+        padding-left: 7%;
+    }
+
+    .person {
+      width: 100%;
+    }
+
+    #Navigation {
+      width: 100%;
+      text-align: center;
+    }
+
 }

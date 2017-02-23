@@ -13,24 +13,31 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
 </head>
 <body>
-  <header>
-    <nav id="navigation">
-      <a href="#About">About</a>
-      <a href="#Team">Team</a>
-      <a href="#Contact">Contact</a>
+
+  <header id="Header">
+
+    <nav id="Navigation">
+      <a class = "navigation__link" href="#About">About</a>
+      <a class = "navigation__link" href="#Team">Team</a>
+      <a class = "navigation__link" href="#Contact">Contact</a>
     </nav>
-    <section id = 'wrapper'>
-      <h1 class='header-txt'> PAMF </h1>
-      <h2 class="header-tag"> Designing Coding Building </h2>
+
+    <section class = 'title'>
+      <h1 class="title__main"> PAMF </h1>
+      <h2 class="title__sub"> Designing Coding Building </h2>
+      <a class="title__chevron" href="#About">
+      </a>
     </section>
   </header>
 
+  <section id="navbox" class='navigation__box'>
+  </section>
 
 <section id="About" >
-
 <h2> About </h2>
   <p>
     We're a group of creative full-stack web developers who like to build fun and accessible products.
@@ -41,50 +48,78 @@
   <section id="Team" class="team">
 
     <section class="person person--yellow" tabindex="0">
-      <section class="person__slidefront">
+      <section class="person__slidefront person__topleft">
         <section class="person__content">
           <section class="person__portrait person__portrait--philippa"></section>
           <h2 class="person__title">Philippa</h2>
         </section>
       </section>
-      <section class="person__slideback">
-        BLAH BLAH
+      <section class="person__slideback person__slideback--tl">
+        <section class="person__info">
+            <h2 class="person__title">Philippa</h2>
+            <a class="person__link person--centertext" href="web">Website link</a>
+            <a class="person__link" href="web">Github</a> |
+            <a class="person__link" href="web">Twitter</a> |
+            <a class="person__link" href="web">LinkedIn</a> |
+            <a class="person__link" href="">Codewars</a>
+        </section>
       </section>
     </section>
 
     <section class="person person--offwhite" tabindex="0">
-      <section class="person__slidefront">
+      <section class="person__slidefront person__topright">
         <section class="person__content">
           <section class="person__portrait person__portrait--antonio"></section>
           <h2 class="person__title">Antonio</h2>
         </section>
       </section>
-      <section class="person__slideback">
-        BLAH BLAH
+      <section class="person__slideback person__slideback--tr">
+        <section class="person__info">
+          <h2 class="person__title">Antonio</h2>
+          <a class="person__link person--centertext" href="web">Website link</a>
+          <a class="person__link" href="web">Github</a> |
+          <a class="person__link" href="web">Twitter</a> |
+          <a class="person__link" href="web">LinkedIn</a> |
+          <a class="person__link" href="">Codewars</a>
+        </section>
       </section>
     </section>
 
     <section class="person person--orange" tabindex="0">
-      <section class="person__slidefront">
+      <section class="person__slidefront person__bottomleft">
         <section class="person__content">
           <section class="person__portrait person__portrait--maja"></section>
           <h2 class="person__title">Maja</h2>
         </section>
       </section>
-      <section class="person__slideback">
-        BLAH BLAH
+      <section class="person__slideback person__slideback--bl">
+        <section class="person__info">
+          <h2 class="person__title">Maja</h2>
+          <a class="person__link person--centertext" href="web">Website link</a>
+          <a class="person__link" href="web">Github</a> |
+          <a class="person__link" href="web">Twitter</a> |
+          <a class="person__link" href="web">LinkedIn</a> |
+          <a class="person__link" href="">Codewars</a>
+        </section>
       </section>
     </section>
 
     <section class="person person--lightblue" tabindex="0">
-      <section class="person__slidefront">
+      <section class="person__slidefront person__bottomright">
         <section class="person__content">
           <section class="person__portrait person__portrait--finn"></section>
           <h2 class="person__title">Finn</h2>
         </section>
       </section>
-      <section class="person__slideback">
-        BLAH BLAH
+      <section class="person__slideback person__slideback--br">
+        <section class="person__info">
+          <h2 class="person__title">Finn</h2>
+          <a class="person__link person--centertext" href="web">Website link</a>
+          <a class="person__link" href="web">Github</a> |
+          <a class="person__link" href="web">Twitter</a> |
+          <a class="person__link" href="web">LinkedIn</a> |
+          <a class="person__link" href="">Codewars</a>
+        </section>
       </section>
     </section>
 
@@ -92,18 +127,18 @@
 
   <section id="Contact">
     <h1 id="contact_form_header">Contact</h1>
+
     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
     	<div class="row">
-    		<label for="name"></label>
-    		<!-- <input id="name" class="input" name="name" type="text" value="" placeholder="Your name here" size="32" /><br /> -->
-        <textarea id="name" class="input" name="name" placeholder="Your name here" rows="1" cols="30"></textarea><br />
-      </div>
+    		<label for="name">Name:</label><br />
+    		<input id="name" class="input" name="name" type="text" value="" placeholder="your name here" size="30" /><br />
+    	</div>
     	<div class="row">
-    		<label for="email"></label>
-    		<!-- <input id="email" class="input" name="email" type="text" value="" placeholder="Your email here" size="32" /><br /> -->
-        <textarea id="email" class="input" name="email" placeholder="Your email here" rows="1" cols="30"></textarea><br />
-      </div>
+    		<label for="email">email:</label><br />
+    		<input id="email" class="input" name="email" type="text" value="" placeholder="your email here" size="30" /><br />
+    	</div>
     	<div class="row">
+
     		<label for="message"></label>
         <!-- <input id="message" class="input" name="message" type="text" value="" placeholder="Your name here" rows="7" cols="32" /><br /> -->
     	  <textarea id="message" class="input" name="message" placeholder="Your message here" rows="7" cols="30"></textarea><br />
@@ -113,5 +148,11 @@
 
   </section>
 
+  <footer id="Footer">
+    <p class="footer__text"> © 2017 PAMP • F&C, London </p>
+    <a class="footer__chevron" href="#Header"></a>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
