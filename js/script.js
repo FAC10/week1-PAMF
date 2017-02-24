@@ -22,6 +22,7 @@
   });
 })();
 
+// add focus functionality to links witin team section
 (function () {
   var personLinks = document.getElementsByClassName('person__link');
   personLinks = Array.from(personLinks);
@@ -36,6 +37,7 @@
     element.classList.remove('remove-' + pos);
     element.nextSibling.nextSibling.classList.remove('stay');
   }
+  // closes all sections within the team section
   function closeAll() {
     closeElement(tl, 'tl');
     closeElement(tr, 'tr');
