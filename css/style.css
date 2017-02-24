@@ -323,12 +323,13 @@ padding-top: 5%;
 
 #Contact {
   background-color: #fafafa;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
 }
 #contact_form {
 position: relative;
-padding-bottom: 6%;
+width: 50%;
+margin: 0 auto;
 }
 
 ::-webkit-input-placeholder {
@@ -349,13 +350,13 @@ padding-bottom: 6%;
 #name, #email, #message {
   border: 2px solid rgba(0,0,0,0.5);
   border-radius: 10px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  position: relative;
   text-indent: 7px;
-  width: 25vw;
-  height: 5vh;
-  font-size: 1.5rem;
+  width: 100%;
+  font-size: 1.5rem;*/
+  margin: 0 auto;
+  margin-top: 3%;
 }
 
 #message {
@@ -365,10 +366,8 @@ padding-bottom: 6%;
   background-color: white;
   border: 2px solid rgba(0,0,0,0.5);
   border-radius: 10px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 130%;
+  display: block;
+  margin: 3% auto 0 auto;
   font-size: 1.5rem;
 }
 
@@ -401,7 +400,7 @@ background-color: #ff6f56;
     header {
       background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.4) 50%), url(../assets/header-mobile.png);
     }
-  
+
     .title {
       bottom: 10%;
   }
