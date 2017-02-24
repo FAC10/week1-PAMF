@@ -1,5 +1,7 @@
 # week1-PAMF
 
+[![Join the chat at https://gitter.im/week1-PAMF/Lobby](https://badges.gitter.im/week1-PAMF/Lobby.svg)](https://gitter.im/week1-PAMF/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Why?
 
 We are building this site to showcase our skills and attract clients. We want to build a site that is visually appealing, fully accessible (even with JavaScript disabled) and informative.

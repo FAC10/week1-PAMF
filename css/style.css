@@ -5,7 +5,6 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Playfair Display', sans-serif;
   font-size: 3rem;
 }
 
@@ -43,11 +42,12 @@ h2 {
   margin-top: 1.6rem;
 }
 .navigation__link:hover, .navigation__link:focus {
-  color: #07689f;
+  color: #ff6f56;
   border-bottom: 2px solid #fafafa;
 }
 
 .navigation__link--white:hover, .navigation__link--white:focus {
+  color: #07689f;
   border-bottom: 2px solid #ff6f56;
 }
 
@@ -62,7 +62,7 @@ h2 {
 
 header {
   position: relative;
-  background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.4) 50%), url(../assets/header4.png);
+  background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.4) 50%), url(../assets/header.png);
   background-size: 100%;
   width: 100%;
   height: 100vh;
@@ -104,7 +104,7 @@ header {
     background-position: center;
 }
 
-.title__chevron:hover {
+.title__chevron:hover, .title__chevron:focus {
 background-image: url(../assets/down-chevron-hover.png);
 }
 
@@ -182,14 +182,6 @@ background-image: url(../assets/down-chevron-hover.png);
 .person__portrait--finn { background-image: url("../images/finn.jpeg"); }
 .person__portrait--maja { background-image: url("../images/maja.jpeg"); }
 
-.person__title {
-  text-align: center;
-  margin: 0.5rem 0 0 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  color: #252525;
-}
-
 .person__bio {
   font-size: 1.2rem;
 }
@@ -236,12 +228,25 @@ background-image: url(../assets/down-chevron-hover.png);
   font-size: 1.5rem;
 }
 
+.person--center {
+  text-align: center;
+}
+
 .person__link {
   color: black;
   font-size: 1.5rem;
 }
-.person__link:hover {
+.person__link:hover, .person__link:focus {
   color: #07689f;
+}
+
+.person__title {
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #252525;
+  font-size: 2.2rem;
 }
 
 .person--centertext {
@@ -250,53 +255,52 @@ background-image: url(../assets/down-chevron-hover.png);
   text-align: center;
 }
 
-.person__slideback--tl, .person__slideback--bl {
+.person__slideback--tl{
+  top: -100%;
   left: -100%;
 }
-.person__slideback--tr, .person__slideback--br {
+.person__slideback--tr {
+  top: -100%;
   left: 100%;
 }
-.person__slideback--tl, .person__slideback--tr {
-  top: -100%
-}
-.person__slideback--bl, .person__slideback--br {
+.person__slideback--bl {
   top: 100%;
+  left: -100%;
 }
+.person__slideback--br {
+  top: 100%;
+  left: 100%;
+}
+
 .person:hover .person__slideback--tl, .person:hover .person__slideback--tr,
-.person:focus .person__slideback--tl, .person:focus .person__slideback--tr {
-  left: 0;
-  top: 0;
-}
+.person:focus .person__slideback--tl, .person:focus .person__slideback--tr,
 .person:hover .person__slideback--bl, .person:hover .person__slideback--br,
-.person:focus .person__slideback--bl, .person:focus .person__slideback--br {
+.person:focus .person__slideback--bl, .person:focus .person__slideback--br,
+.stay {
   left: 0;
   top: 0;
 }
 
-.person__link:focus .person__slideback {
-  left: 0;
-  top: 0;
-}
-.person:hover .person__bottomleft  {
+.person:hover .person__bottomleft, .person:focus .person__bottomleft, .remove-bl  {
   left: 100%;
   top: -100%;
 }
-.person:hover .person__bottomright {
+.person:hover .person__bottomright, .person:focus .person__bottomright, .remove-br  {
   left: -100%;
   top: -100%;
 }
-.person:hover .person__topleft {
+.person:hover .person__topleft, .person:focus .person__topleft, .remove-tl  {
   top: 100%;
   left: 100%;
 }
-.person:hover .person__topright {
+.person:hover .person__topright, .person:focus .person__topright, .remove-tr {
   top: 100%;
   left: -100%;
 }
 
 #Footer {
 background-color: #07689f;
-padding-top: 10%;
+padding-top: 5%;
 }
 
 .footer__text {
@@ -306,64 +310,77 @@ padding-top: 10%;
 
 .footer__chevron {
     background-image: url(../assets/up-chevron.png);
-    background-size: 2.5rem;
+    background-size: 2rem;
     padding: 5%;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
 }
 
-.footer__chevron:hover {
+.footer__chevron:hover, .footer__chevron:focus {
   background-image: url(../assets/up-chevron-yellow.png);
 }
+
 #Contact {
   background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 100px;
 }
-
 #contact_form {
 position: relative;
-padding-bottom: 4%;
+padding-bottom: 6%;
 }
 
 ::-webkit-input-placeholder {
-   text-align: center;
+  text-align: center;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   text-align: center;
+:-moz-placeholder { / Firefox 18- /
+  text-align: center;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   text-align: center;
+::-moz-placeholder { / Firefox 19+ /
+  text-align: center;
 }
 
 :-ms-input-placeholder {
-   text-align: center;
+  text-align: center;
 }
-
-
-#name, #email, #message, #submit_button {
+#name, #email, #message {
   border: 2px solid rgba(0,0,0,0.5);
   border-radius: 10px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  text-indent: 7px;
+  width: 25vw;
+  height: 5vh;
+  font-size: 1.5rem;
 }
 
+#message {
+  height: 25vh
+}
 #submit_button {
+  background-color: white;
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 10px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 130%;
+  font-size: 1.5rem;
 }
 
+#submit_button:hover {
+background-color: #ff6f56;
+}
 #contact_form_header {
   font-family: 'Raleway';
   text-align: center;
   padding-bottom: 2%;
 }
+
 
 
 @media screen and (max-width: 420px) {
@@ -381,4 +398,17 @@ padding-bottom: 4%;
       text-align: center;
     }
 
+    header {
+      background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.4) 50%), url(../assets/header-mobile.png);
+    }
+
+    .title {
+      bottom: 10%;
+  }
+    #submit_button {
+      top: 140%;
+    }
+    #name, #email, #message, #submit_button {
+      font-size: 0.8rem;
+    }
 }
