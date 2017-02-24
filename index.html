@@ -133,12 +133,20 @@
   <section id="Contact">
     <h2 id="contact_form_header">Contact</h2>
 
-    <form action="https://formspree.io/your@email.com"
-      method="POST">
-      <input type="text" name="_replyto" placeholder="Your email" />
-      <input type="hidden" name="_next" value="index.html" />
-      <input type="email" name="_replyto">
-      <input type="submit" value="Send">
+    <form id="contact_form" action="mailto:antoniotrkdz@gmail.com?subject=PAMF enquiry" method="POST" enctype="text/plain">
+    <div class="row">
+      <input id="name" class="input" name="name" type="text" value="" placeholder="your name here" size="30" /><br />
+    </div>
+    <div class="row">
+      <input id="email" class="input" name="email" type="text" value="" placeholder="your email here" size="30" /><br />
+    </div>
+    <div class="row">
+
+      <label for="message"></label>
+      <!-- <input id="message" class="input" name="message" type="text" value="" placeholder="Your name here" rows="7" cols="32" /><br /> -->
+      <textarea id="message" class="input" name="message" placeholder="Your message here" rows="7" cols="30"></textarea><br />
+    </div>
+      <input id="submit_button" type="submit" value="Send email" />
     </form>
 
   </section>

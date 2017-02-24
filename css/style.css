@@ -321,6 +321,53 @@ padding-top: 5%;
   background-image: url(../assets/up-chevron-yellow.png);
 }
 
+#Contact {
+  background-color: #fafafa;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#contact_form {
+  padding-bottom: 4%;
+  position: relative;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { / Firefox 18- /
+  text-align: center;
+}
+
+::-moz-placeholder { / Firefox 19+ /
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+#name, #email, #message {
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-indent: 7px;
+}
+#submit_button {
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 130%;
+}
+#contact_form_header {
+  font-family: 'Raleway';
+  text-align: center;
+  padding-bottom: 2%;
+}
+
 
 
 @media screen and (max-width: 420px) {
