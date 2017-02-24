@@ -63,7 +63,7 @@ h2 {
 
 header {
   position: relative;
-  background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.4) 50%), url(../assets/header4.png);
+  background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.4) 50%), url(../assets/header.png);
   background-size: 100%;
   width: 100%;
   height: 100vh;
@@ -401,7 +401,7 @@ background-color: #ff6f56;
     header {
       background-image: linear-gradient(-225deg, rgba(250,250,250, 0.6), 0%, rgba(0,0,0, 0.4) 50%), url(../assets/header-mobile.png);
     }
-  
+
     .title {
       bottom: 10%;
   }
