@@ -223,6 +223,12 @@ background-image: url(../assets/down-chevron-hover.png);
   font-size: 1.5rem;
 }
 
+.person--small {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
 .person__text {
   color: black;
   font-size: 1.5rem;
@@ -392,6 +398,20 @@ background-color: #ff6f56;
 
     .person {
       width: 100%;
+    }
+
+    .person--small {
+      display: block;
+    }
+
+    .person__slideback--tl, .person__slideback--tr,
+    .person__slideback--bl, .person__slideback--br {
+      top: 0;
+      left: 0;
+    }
+
+    .person__slidefront {
+      transition: none;
     }
 
     #Navigation {
