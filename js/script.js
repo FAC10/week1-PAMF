@@ -25,24 +25,47 @@
 (function () {
   var personLinks = document.getElementsByClassName('person__link');
   personLinks = Array.from(personLinks);
-  var topLeft = document.getElementsByClassName('person__topleft')[0];
-  var topRight = document.getElementsByClassName('person__topright')[0];
-  var bottomLeft = document.getElementsByClassName('person__bottomleft')[0];
-  var bottomRight = document.getElementsByClassName('person__bottomright')[0];
+  var person = document.getElementsByClassName('person');
+  person = Array.from(person);
+  var tl = document.getElementsByClassName('person__topleft')[0];
+  var tr = document.getElementsByClassName('person__topright')[0];
+  var bl = document.getElementsByClassName('person__bottomleft')[0];
+  var br = document.getElementsByClassName('person__bottomright')[0];
 
+  function closeElement(element, pos) {
+    element.classList.remove('remove-' + pos);
+    element.nextSibling.nextSibling.classList.remove('stay');
+  }
+  function closeAll() {
+    closeElement(tl, 'tl');
+    closeElement(tr, 'tr');
+    closeElement(bl, 'bl');
+    closeElement(br, 'br');
+  }
+
+
+  person.forEach(function (e) {
+    e.addEventListener('focus', function () {
+      closeAll();
+    });
+  });
   personLinks.forEach(function (e) {
     e.addEventListener('focus', function () {
       var frontSlide = e.parentNode.parentNode.parentNode.parentNode.firstChild.nextSibling;
       if (frontSlide.className.includes('topleft')) {
-        frontSlide.className += ' remove-tl';
+        closeAll();
+        frontSlide.classList.add('remove-tl');
       } else if (frontSlide.className.includes('topright')) {
-        frontSlide.className += ' remove-tr';
-      } else if (frontSlide.className.includes('bottomright')) {
-        frontSlide.className += ' remove-br';
+        closeAll();
+        frontSlide.classList.add('remove-tr');
       } else if (frontSlide.className.includes('bottomleft')) {
-        frontSlide.className += ' remove-bl';
+        closeAll();
+        frontSlide.classList.add('remove-bl');
+      } else if (frontSlide.className.includes('bottomright')) {
+        closeAll();
+        frontSlide.classList.add('remove-br');
       }
-      e.parentNode.parentNode.parentNode.className += ' stay';
+      e.parentNode.parentNode.parentNode.classList.add('stay');
     });
   });
 })();
