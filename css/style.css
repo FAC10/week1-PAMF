@@ -327,9 +327,11 @@ padding-top: 5%;
   padding-bottom: 8vh;
 }
 #contact_form {
-position: relative;
-width: 50%;
-margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
 }
 
 ::-webkit-input-placeholder {
@@ -356,7 +358,7 @@ margin: 0 auto;
   width: 100%;
   font-size: 1.5rem;*/
   margin: 0 auto;
-  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 #message {
@@ -403,10 +405,8 @@ background-color: #ff6f56;
 
     .title {
       bottom: 10%;
-  }
-    #submit_button {
-      top: 140%;
     }
+
     #name, #email, #message, #submit_button {
       font-size: 0.8rem;
     }
