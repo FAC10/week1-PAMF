@@ -405,9 +405,9 @@ background-color: #ff6f56;
 
     .title {
       bottom: 10%;
-  }
+    }
 
-  #name, #email, #message, #submit_button {
-    font-size: 0.8rem;
-  }
+    #name, #email, #message, #submit_button {
+      font-size: 0.8rem;
+    }
 }
